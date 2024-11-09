@@ -47,10 +47,59 @@
                      </div>
             </div>
 
+           
+            <div class="md:max-w-[580px] mx-auto flex-1 xl:space-y-6 space-y-3"> 
+              <div class="bg-white rounded-xl shadow-sm md:p-4 p-2 space-y-4 text-sm font-medium border1">
+                  <div class="flex items-center md:gap-3 gap-1">
+
+                      <div class="flex-1 bg-slate-100 hover:bg-opcacity-80 transition-all rounded-lg cursor-pointer
+                                   pointer" uk-toggle="target: #create-status">
+
+                      <div class="py-2.5 text-center">What do you have in mind?</div>
+                    </div>
+
+                      <div class="cursor-pointer hover:bg-opacity-80 p-1 px-1.5 rounded-xl transition-all bg-
+                                  pink-100/60 hover:bg-pink-100" uk-toggle="target: #create-status">
+
+                            <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 viewBox="0 0 32 32" xml:space="preserve">
+<style type="text/css">
+    .st0 {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+    }
+
+    .st1 {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 2;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+    }
+</style>
+<circle class="st0" cx="16" cy="14" r="5" />
+<circle class="st0" cx="16" cy="14" r="1" />
+<path class="st0" d="M20.3,23.3l2,2.4c1.1,1.3,0.1,3.3-1.5,3.3h-9.5c-1.7,0-2.6-2-1.5-3.3l2-2.4" />
+<path class="st0" d="M27,23H5c-1.1,0-2-0.9-2-2V7c0-1.1,0.9-2,2-2h22c1.1,0,2,0.9,2,2v14C29,22.1,28.1,23,27,23z" />
+<line class="st0" x1="25" y1="9" x2="23" y2="9" />
+</svg>
+
+                      </div>
+
+                  </div>
+
+                </div>
+
+            </div>
+
           </div>
         <div class="flex-1"></div>
     </div>
 </main>
 
 <partial name="Modals/_CreateStory"></partial> 
-
+<partial name="Modals/_CreateStatus"></partial>
