@@ -7,4 +7,9 @@
     <RootNamespace>SocialMedia_App</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\placeholder\" />
+    <Folder Include="wwwroot\images\NewFolder\" />
+  </ItemGroup>
+
 </Project>
