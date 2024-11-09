@@ -1,51 +1,45 @@
-﻿<div class="hidden lg:p-20" id="create-status" uk-modal=""> 
+﻿<div class="hidden lg:p-20" id="create-status" uk-modal="">
+    <div class="uk-modal-dialog -bottom-1 relative overflow-hidden mx-auto bg-white shadow-xl rounded-lg md:w-[520px] w-full">
 
-<div class="uk-modal-dialog -bottom-1 relative overflow-hidden mx-auto bg-white shadow-xl rounded-lg
-             md:w-[520px] w-full">
-<div class="text-center py-4 border-b mb-0">
-    <h2 class="text-sm font-medium text-black">Create Status</h2>
+        <div class="text-center py-4 border-b mb-0 relative">
+            <h2 class="text-sm font-medium text-black">Create Status</h2>
 
-    <button type="button" class="button-icon absolute top-0 right-0 m-2.5 uk-modal-close">
+            <!-- Adjusted close button with smaller SVG and more controlled positioning -->
+            <button type="button" class="button-icon absolute top-2 right-2 m-2.5 uk-modal-close" style="width: 24px; height: 24px;">
+                <svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01zm181.008-630.016c-12.496-12.496-32.752-12.496-45.248 0L512 466.752l-135.76-135.76c-12.496-12.496-32.752-12.496-45.264 0-12.496 12.496-12.496 32.752 0 45.248L466.736 512l-135.76 135.76c-12.496 12.48-12.496 32.769 0 45.249 12.496 12.496 32.752 12.496 45.264 0L512 557.249l135.76 135.76c12.496 12.496 32.752 12.496 45.248 0 12.496-12.48 12.496-32.769 0-45.249L557.248 512l135.76-135.76c12.512-12.512 12.512-32.768 0-45.248z" />
+                </svg>
+            </button>
+        </div>
 
-                <svg fill="#000000" width="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512 282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01 0-247.024 200.976-448 448-448s448 200.977 448 448-200.976 449.01-448 449.01zm181.008-630.016c-12.496-12.496-32.752-12.496-45.248 0L512 466.752l-135.76-135.76c-12.496-12.496-32.752-12.496-45.264 0-12.496 12.496-12.496 32.752 0 45.248L466.736 512l-135.76 135.76c-12.496 12.48-12.496 32.769 0 45.249 12.496 12.496 32.752 12.496 45.264 0L512 557.249l135.76 135.76c12.496 12.496 32.752 12.496 45.248 0 12.496-12.48 12.496-32.769 0-45.249L557.248 512l135.76-135.76c12.512-12.512 12.512-32.768 0-45.248z" /></svg>
+        <form>
+            <div class="space-y-5 mt-3 p-2">
+                <!-- Adjusted text area styling for better visibility -->
+                <textarea class="w-full !text-black placeholder:!text-gray-500 !bg-white focus:border-transparent focus:ring-transparent !font-normal !text-lg p-3 rounded-md"
+                          name="content"
+                          rows="2"
+                          placeholder="What do you have in mind?"></textarea>
+            </div>
 
-    </button>
-
-</div>
-
-<form>
-    <div class="space-y-5 mt-3 p-2">
-        <textarea class="w-full !text-black pålaceholder:!text-black !bg-white focus\:\!border-transparent
-           focus:! border-transparent focus:!ring-transparent !font-normal !text-xl"
-        name="content"
-        rows="2"
-        placeholder="What do you have in mind?"></textarea>
-    </div>
-
-            <div class="flex items-center gap-2 text:sm py-2 px-4 font-medium flex-wrap">
-                <input id="imageUpload" type="file" class="hidden name=UploadContent" accept="image/png,
-                        image/jpeg"  />
+            <div class="flex items-center gap-2 text-sm py-2 px-4 font-medium flex-wrap">
+                <input id="imageUpload" type="file" class="hidden" name="UploadContent" accept="image/png, image/jpeg" />
 
                 <div id="imagePreviewContainer" class="hidden">
                     <img id="imagePreview" src="#" class="w-full h-auto rounded" />
                 </div>
 
-                <button type="button" id="imageUploadBtn" class="flex items-center gap 1.5 bg-sky-50
-                         text-sky-600 rounded-full py-1 px-2 border-2 border-sky-100">
-                <ion-icon name="iamge" class="text-base"></ion-icon> Image
+                <button type="button" id="imageUploadBtn" class="flex items-center gap-1.5 bg-sky-50 text-sky-600 rounded-full py-1 px-2 border-2 border-sky-100">
+                    <ion-icon name="image" class="text-base"></ion-icon> Image
                 </button>
-             </div>
+            </div>
 
-             <div class="p-5 flex justify-between items-center">
-                 <div class="flex items-center gap-2">
-                     <button type="submit" class="button bg-blue-500 text-white py-2 px-12 text-[14px]">Create</button>
-                 </div>
-             </div>
-
-</form>
-</div>    
-
+            <div class="p-5 flex justify-between items-center">
+                <button type="submit" class="button bg-blue-500 text-white py-2 px-12 text-sm">Create</button>
+            </div>
+        </form>
+    </div>
 </div>
+
 
 
 
