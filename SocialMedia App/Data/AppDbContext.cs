@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SocialMedia_App.Data.Models;
 
 namespace SocialMedia_App.Data
 {
@@ -9,6 +10,8 @@ namespace SocialMedia_App.Data
         
         }
         
+        public DbSet<Post> Posts { get; set; }
+
 }
     }
 

@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using SocialMedia_App.Models;
 using System.Diagnostics;
 
 namespace SocialMedia_App.Controllers
