@@ -17,6 +17,15 @@ namespace SocialMedia_App.Data.Models
 
         public DateTime DateUpdated { get; set; }
 
+        // Foreign key
 
+        public int UserId { get; set; }
+
+        // navigation properties
+
+        public User User { get; set; }
+
+      
     }
+
 }

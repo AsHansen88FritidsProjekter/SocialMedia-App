@@ -15,5 +15,9 @@ namespace SocialMedia_App.Data.Models
         
         public string ProfilePictureUrl {  get; set; }
 
+        // navigation properties
+
+        public ICollection<Post> Posts { get; set; } = new List<Post>();
+
     }
 }
